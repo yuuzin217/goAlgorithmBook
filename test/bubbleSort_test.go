@@ -2,7 +2,7 @@ package algorithmBook
 
 import (
 	"testing"
-	"yuuzin217/algorithmBook/algorithmBook"
+	"yuuzin217/algorithmBook"
 )
 
 func TestBubbleSort(t *testing.T) {

@@ -5,8 +5,8 @@ import "fmt"
 // 線形探索法
 
 type SearchResult struct {
-	index int
-	value string
+	Index int
+	Value string
 }
 
 func linearSearch(target string, dictionary []string) *SearchResult {
@@ -20,7 +20,7 @@ func linearSearch(target string, dictionary []string) *SearchResult {
 	}
 	fmt.Println("探索完了")
 	return &SearchResult{
-		index: i,
-		value: dictionary[i],
+		Index: i,
+		Value: dictionary[i],
 	}
 }
