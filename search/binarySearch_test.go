@@ -5,36 +5,36 @@ import (
 	"yuuzin217/algorithmBook/search"
 )
 
-func TestLinearSearch(t *testing.T) {
+func TestBinarySearch(t *testing.T) {
 	for _, testCase := range []struct {
 		req *request
 		res *response
 	}{
 		{
 			req: &request{
-				target: "a",
+				target: "f",
 				source: testSource,
 			},
 			res: &response{
-				index: 0,
-				value: "a",
+				index: 5,
+				value: "f",
 			},
 		},
 		{
 			req: &request{
-				target: "o",
+				target: "u",
 				source: testSource,
 			},
 			res: &response{
-				index: 14,
-				value: "o",
+				index: 20,
+				value: "u",
 			},
 		},
 	} {
-		index, value := search.LinearSearch(testCase.req.target, testCase.req.source)
-		if err := check("TestLinearSearch", &response{index, value}, testCase.res); err != nil {
+		index, value := search.BinarySearch(testCase.req.target, testCase.req.source)
+		if err := check("TestBinarySearch", &response{index, value}, testCase.res); err != nil {
 			t.Fatal(err)
 		}
 	}
-	t.Log("TestLinearSearch OK")
+	t.Log("TestBinarySearch OK")
 }
