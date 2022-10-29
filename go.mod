@@ -1,3 +1,3 @@
-module yuuzin217/algorithmBook
+module algorithmBook
 
 go 1.18

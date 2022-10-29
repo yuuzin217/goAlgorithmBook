@@ -1,8 +1,8 @@
 package search_test
 
 import (
+	"algorithmBook/search"
 	"testing"
-	"yuuzin217/algorithmBook/search"
 )
 
 func TestBinarySearch(t *testing.T) {

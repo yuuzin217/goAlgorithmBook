@@ -1,8 +1,8 @@
 package sort_test
 
 import (
+	"algorithmBook/sort"
 	"testing"
-	"yuuzin217/algorithmBook/sort"
 )
 
 func TestBubbleSort(t *testing.T) {

@@ -1,9 +1,9 @@
 package radixConvert_test
 
 import (
+	"algorithmBook/radixConvert"
 	"fmt"
 	"testing"
-	"yuuzin217/algorithmBook/radixConvert"
 )
 
 func TestBinaryToDecimal(t *testing.T) {

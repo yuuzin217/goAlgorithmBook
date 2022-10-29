@@ -1,9 +1,9 @@
 package search_test
 
 import (
+	"algorithmBook/search"
 	"fmt"
 	"testing"
-	"yuuzin217/algorithmBook/search"
 )
 
 func TestChain(t *testing.T) {
