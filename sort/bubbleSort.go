@@ -1,8 +1,8 @@
-package algorithmBook
+package sort
 
 // バブルソート
 
-func bubbleSort(nums []int) []int {
+func BubbleSort(nums []int) []int {
 	len := len(nums) - 1
 	for count := 0; count < len; count++ {
 		breakFlg := true
